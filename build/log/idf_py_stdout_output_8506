@@ -1,0 +1,2562 @@
+Command: /home/dhruv/.espressif/python_env/idf6.1_py3.14_env/bin/python /home/dhruv/softwares/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/dhruv/softwares/esp-idf/examples/esp_driver_design/pwm_driver/build/pwm_driver.elf /home/dhruv/softwares/esp-idf/examples/esp_driver_design/pwm_driver/build/bootloader/bootloader.elf -m '/home/dhruv/.espressif/python_env/idf6.1_py3.14_env/bin/python' '/home/dhruv/softwares/esp-idf/tools/idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0040,len:6272
+load:0x40078000,len:15820
+load:0x40080400,len:3988
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF v6.1-dev-4811-gfce70533fa 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 28 2026 18:14:50[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=092d4h ( 37588) map[0m
+[0;32mI (101) esp_image: segment 1: paddr=000192fc vaddr=3ffb0000 size=029cch ( 10700) load[0m
+[0;32mI (106) esp_image: segment 2: paddr=0001bcd0 vaddr=40080000 size=04348h ( 17224) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1105ch ( 69724) map[0m
+[0;32mI (138) esp_image: segment 4: paddr=00031084 vaddr=40084348 size=07560h ( 30048) load[0m
+[0;32mI (151) esp_image: segment 5: paddr=000385ec vaddr=50000000 size=00028h (    40) load[0m
+[0;32mI (157) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (157) boot: Disabling RNG early entropy source...[0m
+[0;32mI (169) cpu_start: Multicore app[0m
+[0;32mI (177) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (177) cpu_start: Pro cpu start user code[0m
+[0;32mI (177) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (179) app_init: Application information:[0m
+[0;32mI (183) app_init: Project name:     pwm_driver[0m
+[0;32mI (187) app_init: App version:      v6.1-dev-4811-gfce70533fa[0m
+[0;32mI (193) app_init: Compile time:     May 28 2026 18:14:42[0m
+[0;32mI (198) app_init: ELF file SHA256:  f486a3adb...[0m
+[0;32mI (202) app_init: ESP-IDF:          v6.1-dev-4811-gfce70533fa[0m
+[0;32mI (207) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (211) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (215) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (219) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (226) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (230) heap_init: At 3FFB37C8 len 0002C838 (178 KiB): DRAM[0m
+[0;32mI (236) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (241) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (247) heap_init: At 4008B8A8 len 00014758 (81 KiB): IRAM[0m
+[0;32mI (253) spi_flash: detected chip: generic[0m
+[0;32mI (256) spi_flash: flash io: dio[0m
+[0;33mW (259) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (272) main_task: Started on CPU0[0m
+[0;32mI (272) mI (282) TAG: ye button is set hahahaha![0m
+
+[0;32mI (282) main_task: Returned from app_main()[0m
+[0;32mI (3082) pwm_uart_communication: notification_count: 0 [0m
+
+[0;32mI (3182) pwm_uart_communication: notification_count: 0 [0m
+
+[0;32mI (3282) pwm_uart_communication: notification_count: 0 [0m
+
+[0;32mI (3382) pwm_uart_communication: notification_count: 0 [0m
+
+[0;32mI (3482) pwm_uart_communication: notification_count: 0 [0m
+
+[0;32mI (3582) pwm_uart_communication: notification_count: 0 [0m
+
+[0;32mI (3682) pwm_uart_communication: notification_count: 0 [0m
+
+[0;32mI (3782) pwm_uart_communication: notification_count: 0 [0m
+
+[0;32mI (3882) pwm_uart_communication: notification_count: 0 [0m
+
+[0;32mI (3982) pwm_uart_communication: notification_count: 0 [0m
+
+[0;32mI (4082) pwm_uart_communication: notification_count: 0 [0m
+
+[0;32mI (4182) pwm_uart_communication: notification_count: 0 [0m
+
+[0;32mI (4282) pwm_uart_communication: notification_count: 0 [0m
+
+[0;32mI (4382) pwm_uart_communication: notification_count: 0 [0m
+
+[0;32mI (4482) pwm_uart_communication: notification_count: 0 [0m
+
+[0;32mI (4582) pwm_uart_communication: notification_count: 0 [0m
+
+[0;32mI (4682) pwm_uart_communication: notification_count: 0 [0m
+
+[0;32mI (4782) pwm_uart_communication: notification_count: 0 [0m
+
+[0;32mI (4882) pwm_uart_communication: notification_count: 0 [0m
+
+[0;32mI (4982) pwm_uart_communication: notification_count: 0 [0m
+
+[0;32mI (5012) pwm_uart_communication: Received: count[0m
+[0;32mI (5082) pwm_uart_communication: notification_count: 0 [0m
+
+[0;32mI (5182) pwm_uart_communication: notification_count: 0 [0m
+
+[0;32mI (5282) pwm_uart_communication: notification_count: 0 [0m
+
+[0;32mI (5382) pwm_uart_communication: notification_count: 0 [0m
+
+[0;32mI (5482) pwm_uart_communication: notification_count: 0 [0m
+
+[0;32mI (5582) pwm_uart_communication: notification_count: 0 [0m
+
+[0;32mI (5682) pwm_uart_communication: notification_count: 0 [0m
+
+[0;32mI (5782) pwm_uart_communication: notification_count: 0 [0m
+
+[0;32mI (5882) pwm_uart_communication: notification_count: 0 [0m
+
+[0;32mI (5982) pwm_uart_communication: notification_count: 0 [0m
+
+[0;32mI (6082) pwm_uart_communication: notification_count: 0 [0m
+
+[0;32mI (6182) pwm_uart_communication: notification_count: 0 [0m
+
+[0;32mI (6282) pwm_uart_communication: notification_count: 0 [0m
+
+[0;32mI (6382) pwm_uart_communication: notification_count: 0 [0m
+
+[0;32mI (6482) pwm_uart_communication: notification_count: 0 [0m
+
+[0;32mI (6582) pwm_uart_communication: notification_count: 0 [0m
+
+[0;32mI (6682) pwm_uart_communication: notification_count: 0 [0m
+
+[0;32mI (6782) pwm_uart_communication: notification_count: 0 [0m
+
+[0;32mI (6882) pwm_uart_communication: notification_count: 0 [0m
+
+[0;32mI (7482) pwm_uart_communication: Duty_cycle = 0[0m
+[0;32mI (7582) pwm_uart_communication: Duty_cycle = 0[0m
+[0;32mI (7682) pwm_uart_communication: Duty_cycle = 0[0m
+[0;32mI (7782) pwm_uart_communication: Duty_cycle = 5[0m
+[0;32mI (7882) pwm_uart_communication: Duty_cycle = 5[0m
+[0;32mI (7982) pwm_uart_communication: Duty_cycle = 50[0m
+[0;32mI (8082) pwm_uart_communication: Duty_cycle = 50[0m
+[0;32mI (8182) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (8282) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (8382) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (8482) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (8582) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (8682) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (8782) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (8882) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (8982) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (9082) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (9182) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (9282) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (9382) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (9482) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (9582) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (9682) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (9782) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (9882) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (9982) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (10082) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (10182) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (10282) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (10352) pwm_uart_communication: Received: pwm 500[0m
+[0;32mI (10382) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (10482) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (10582) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (17302) pwm_uart_communication: Received: conti[0mcoint
+[0;32mI (22422) pwm_uart_communication: Received: count[0m
+[0;32mI (26422) pwm_uart_communication: button pressed! pwm duty off &LED is OFF duty_cycle:0 [0m
+
+[0;32mI (26632) pwm_uart_communication: button Released! pwm duty on &LED is ON duty_cycle:500 [0m
+
+[0;32mI (27632) pwm_uart_communication: button pressed! pwm duty off &LED is OFF duty_cycle:0 [0m
+
+[0;32mI (27802) pwm_uart_communication: button Released! pwm duty on &LED is ON duty_cycle:500 [0m
+
+[0;32mI (28272) pwm_uart_communication: button pressed! pwm duty off &LED is OFF duty_cycle:0 [0m
+
+[0;32mI (28752) pwm_uart_communication: button Released! pwm duty on &LED is ON duty_cycle:500 [0m
+
+[0;32mI (31182) pwm_uart_communication: Duty_cycle = 0[0m
+[0;32mI (31282) pwm_uart_communication: Duty_cycle = 0[0m
+[0;32mI (31382) pwm_uart_communication: Duty_cycle = 5[0m
+[0;32mI (31482) pwm_uart_communication: Duty_cycle = 5[0m
+[0;32mI (31582) pwm_uart_communication: Duty_cycle = 50[0m
+[0;32mI (31682) pwm_uart_communication: Duty_cycle = 50[0m
+[0;32mI (31782) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (31882) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (31982) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (32082) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (32182) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (32282) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (32382) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (32482) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (32582) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (32682) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (32782) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (32882) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (32982) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (33082) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (33182) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (33282) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (33382) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (33482) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (33582) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (33592) pwm_uart_communication: button pressed! pwm duty off &LED is OFF duty_cycle:0 [0m
+
+[0;32mI (33942) pwm_uart_communication: Received: pwm 500[0m
+[0;32mI (34142) pwm_uart_communication: button Released! pwm duty on &LED is ON duty_cycle:500 [0m
+
+[0;32mI (34182) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (34282) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (34382) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (34482) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (34582) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (34682) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (34782) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (34882) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (34982) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (35082) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (35182) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (40592) pwm_uart_communication: Received: coint[0mcount
+[0;32mI (45972) pwm_uart_communication: Received: count[0m
+[0;32mI (57582) pwm_uart_communication: button pressed! pwm duty off &LED is OFF duty_cycle:0 [0m
+
+[0;32mI (57702) pwm_uart_communication: button Released! pwm duty on &LED is ON duty_cycle:500 [0m
+
+[0;32mI (57902) pwm_uart_communication: button pressed! pwm duty off &LED is OFF duty_cycle:0 [0m
+
+[0;32mI (58052) pwm_uart_communication: button Released! pwm duty on &LED is ON duty_cycle:500 [0m
+
+[0;32mI (58272) pwm_uart_communication: button pressed! pwm duty off &LED is OFF duty_cycle:0 [0m
+
+[0;32mI (58402) pwm_uart_communication: button Released! pwm duty on &LED is ON duty_cycle:500 [0m
+
+[0;32mI (58502) pwm_uart_communication: button pressed! pwm duty off &LED is OFF duty_cycle:0 [0m
+
+[0;32mI (58572) pwm_uart_communication: Received: count[0mpwm 500.
+[0;32mI (58612) pwm_uart_communication: button Released! pwm duty on &LED is ON duty_cycle:500 [0m
+
+[0;32mI (59002) pwm_uart_communication: button pressed! pwm duty off &LED is OFF duty_cycle:0 [0m
+
+[0;32mI (59092) pwm_uart_communication: button Released! pwm duty on &LED is ON duty_cycle:500 [0m
+
+[0;32mI (59392) pwm_uart_communication: button pressed! pwm duty off &LED is OFF duty_cycle:0 [0m
+
+[0;32mI (59522) pwm_uart_communication: button Released! pwm duty on &LED is ON duty_cycle:500 [0m
+
+[0;32mI (59762) pwm_uart_communication: button pressed! pwm duty off &LED is OFF duty_cycle:0 [0m
+
+[0;32mI (59882) pwm_uart_communication: button Released! pwm duty on &LED is ON duty_cycle:500 [0m
+
+[0;32mI (63292) pwm_uart_communication: button pressed! pwm duty off &LED is OFF duty_cycle:0 [0m
+
+[0;32mI (64032) pwm_uart_communication: button Released! pwm duty on &LED is ON duty_cycle:500 [0m
+
+[0;32mI (64352) pwm_uart_communication: button pressed! pwm duty off &LED is OFF duty_cycle:0 [0m
+
+[0;32mI (64482) pwm_uart_communication: button Released! pwm duty on &LED is ON duty_cycle:500 [0m
+
+[0;32mI (64622) pwm_uart_communication: button pressed! pwm duty off &LED is OFF duty_cycle:0 [0m
+
+[0;32mI (64752) pwm_uart_communication: button Released! pwm duty on &LED is ON duty_cycle:500 [0m
+
+[0;32mI (64852) pwm_uart_communication: button pressed! pwm duty off &LED is OFF duty_cycle:0 [0m
+
+[0;32mI (64982) pwm_uart_communication: button Released! pwm duty on &LED is ON duty_cycle:500 [0m
+
+[0;32mI (65082) pwm_uart_communication: button pressed! pwm duty off &LED is OFF duty_cycle:0 [0m
+
+[0;32mI (65202) pwm_uart_communication: button Released! pwm duty on &LED is ON duty_cycle:500 [0m
+
+[0;32mI (65302) pwm_uart_communication: button pressed! pwm duty off &LED is OFF duty_cycle:0 [0m
+
+[0;32mI (65422) pwm_uart_communication: button Released! pwm duty on &LED is ON duty_cycle:500 [0m
+
+[0;32mI (65492) pwm_uart_communication: button pressed! pwm duty off &LED is OFF duty_cycle:0 [0m
+
+[0;32mI (65602) pwm_uart_communication: button Released! pwm duty on &LED is ON duty_cycle:500 [0m
+
+[0;32mI (65702) pwm_uart_communication: button pressed! pwm duty off &LED is OFF duty_cycle:0 [0m
+
+[0;32mI (65812) pwm_uart_communication: button Released! pwm duty on &LED is ON duty_cycle:500 [0m
+
+[0;32mI (65902) pwm_uart_communication: button pressed! pwm duty off &LED is OFF duty_cycle:0 [0m
+
+[0;32mI (66002) pwm_uart_communication: button Released! pwm duty on &LED is ON duty_cycle:500 [0m
+
+[0;32mI (66102) pwm_uart_communication: button pressed! pwm duty off &LED is OFF duty_cycle:0 [0m
+
+[0;32mI (66192) pwm_uart_communication: button Released! pwm duty on &LED is ON duty_cycle:500 [0m
+
+[0;32mI (66282) pwm_uart_communication: button pressed! pwm duty off &LED is OFF duty_cycle:0 [0m
+
+[0;32mI (66372) pwm_uart_communication: button Released! pwm duty on &LED is ON duty_cycle:500 [0m
+
+[0;32mI (66462) pwm_uart_communication: button pressed! pwm duty off &LED is OFF duty_cycle:0 [0m
+
+[0;32mI (66532) pwm_uart_communication: button Released! pwm duty on &LED is ON duty_cycle:500 [0m
+
+[0;32mI (66942) pwm_uart_communication: button pressed! pwm duty off &LED is OFF duty_cycle:0 [0m
+
+[0;32mI (67102) pwm_uart_communication: button Released! pwm duty on &LED is ON duty_cycle:500 [0m
+
+[0;32mI (71112) pwm_uart_communication: Received: count[0m
+[0;32mI (71182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (71282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (71382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (71482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (71582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (71682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (71782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (71882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (71982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (72082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (72182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (72282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (72382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (72482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (72582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (72682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (72782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (72882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (72982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (73082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (73182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (73282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (73382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (73482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (73582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (73682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (73782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (73882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (73982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (74082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (74182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (74282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (74382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (74482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (74582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (74682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (74782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (74882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (74982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (75082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (75182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (75282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (75382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (75482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (75582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (75682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (75782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (75882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (75982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (76082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (76182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (76282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (76382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (76482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (76582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (76682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (76782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (76882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (76982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (77082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (77182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (77282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (77382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (77482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (77582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (77682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (77782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (77882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (77982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (78082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (78182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (78282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (78382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (78482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (78582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (78682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (78782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (78882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (78982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (79082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (79182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (79282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (79382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (79482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (79582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (79682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (79782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (79882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (79982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (80082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (80182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (80282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (80382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (80482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (80582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (80682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (80782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (80882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (80982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (81082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (81182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (81282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (81382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (81482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (81582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (81682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (81782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (81882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (81982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (82082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (82182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (82282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (82382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (82482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (82582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (82682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (82782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (82882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (82982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (83082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (83182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (83282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (83382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (83482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (83582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (83682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (83782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (83882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (83982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (84082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (84182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (84282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (84382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (84482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (84582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (84682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (84782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (84882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (84982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (85082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (85182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (85282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (85382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (85482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (85582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (85682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (85782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (85882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (85982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (86082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (86182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (86282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (86382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (86482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (86582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (86682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (86782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (86882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (86982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (87082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (87182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (87282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (87382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (87482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (87582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (87682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (87782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (87882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (87982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (88082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (88182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (88282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (88382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (88482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (88582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (88682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (88782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (88882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (88982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (89082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (89182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (89282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (89382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (89482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (89582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (89682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (89782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (89882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (89982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (90082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (90182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (90282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (90382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (90482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (90582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (90682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (90782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (90882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (90982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (91082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (91182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (91282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (91382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (91482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (91582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (91682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (91782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (91882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (91982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (92082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (92182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (92282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (92382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (92482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (92582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (92682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (92782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (92882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (92982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (93082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (93182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (93282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (93382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (93482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (93582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (93682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (93782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (93882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (93982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (94082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (94182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (94282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (94382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (94482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (94582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (94682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (94782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (94882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (94982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (95082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (95182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (95282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (95382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (95482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (95582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (95682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (95782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (95882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (95982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (96082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (96182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (96282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (96382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (96482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (96582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (96682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (96782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (96882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (96982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (97082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (97182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (97282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (97382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (97482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (97582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (97682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (97782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (97882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (97982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (98082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (98182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (98282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (98382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (98482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (98582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (98682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (98782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (98882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (98982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (99082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (99182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (99282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (99382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (99482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (99582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (99682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (99782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (99882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (99982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (100082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (100182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (100282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (100382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (100482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (100582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (100682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (100782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (100882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (100982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (101082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (101182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (101282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (101382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (101482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (101582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (101682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (101782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (101882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (101982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (102082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (102182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (102282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (102382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (102482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (102582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (102682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (102782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (102882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (102982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (103082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (103182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (103282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (103382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (103482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (103582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (103682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (103782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (103882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (103982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (104082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (104182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (104282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (104382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (104482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (104582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (104682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (104782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (104882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (104982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (105082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (105182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (105282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (105382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (105482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (105582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (105682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (105782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (105882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (105982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (106082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (106182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (106282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (106382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (106482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (106582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (106682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (106782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (106882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (106982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (107082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (107182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (107282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (107382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (107482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (107582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (107682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (107782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (107882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (107982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (108082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (108182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (108282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (108382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (108482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (108582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (108682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (108782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (108882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (108982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (109082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (109182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (109282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (109382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (109482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (109582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (109682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (109782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (109882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (109982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (110082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (110182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (110282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (110382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (110482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (110582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (110682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (110782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (110882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (110982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (111082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (111182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (111282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (111382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (111482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (111582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (111682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (111782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (111882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (111982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (112082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (112182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (112282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (112382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (112482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (112582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (112682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (112782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (112882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (112982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (113082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (113182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (113282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (113382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (113482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (113582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (113682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (113782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (113882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (113982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (114082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (114182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (114282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (114382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (114482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (114582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (114682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (114782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (114882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (114982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (115082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (115182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (115282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (115382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (115482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (115582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (115682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (115782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (115882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (115982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (116082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (116182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (116282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (116382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (116482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (116582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (116682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (116782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (116882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (116982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (117082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (117182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (117282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (117382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (117482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (117582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (117682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (117782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (117882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (117982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (118082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (118182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (118282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (118382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (118482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (118582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (118682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (118782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (118882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (118982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (119082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (119182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (119282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (119382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (119482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (119582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (119682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (119782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (119882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (119982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (120082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (120182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (120282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (120382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (120482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (120582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (120682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (120782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (120882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (120982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (121082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (121182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (121282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (121382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (121482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (121582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (121682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (121782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (121882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (121982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (122082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (122182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (122282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (122382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (122482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (122582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (122682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (122782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (122882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (122982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (123082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (123182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (123282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (123382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (123482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (123582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (123682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (123782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (123882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (123982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (124082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (124182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (124282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (124382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (124482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (124582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (124682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (124782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (124882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (124982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (125082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (125182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (125282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (125382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (125482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (125582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (125682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (125782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (125882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (125982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (126082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (126182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (126282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (126382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (126482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (126582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (126682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (126782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (126882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (126982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (127082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (127182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (127282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (127382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (127482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (127582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (127682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (127782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (127882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (127982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (128082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (128182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (128282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (128382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (128482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (128582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (128682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (128782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (128882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (128982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (129082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (129182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (129282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (129382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (129482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (129582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (129682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (129782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (129882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (129982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (130082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (130182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (130282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (130382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (130482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (130582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (130682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (130782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (130882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (130982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (131082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (131182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (131282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (131382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (131482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (131582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (131682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (131782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (131882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (131982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (132082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (132182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (132282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (132382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (132482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (132582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (132682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (132782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (132882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (132982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (133082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (133182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (133282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (133382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (133482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (133582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (133682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (133782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (133882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (133982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (134082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (134182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (134282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (134382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (134482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (134582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (134682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (134782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (134882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (134982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (135082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (135182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (135282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (135382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (135482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (135582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (135682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (135782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (135882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (135982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (136082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (136182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (136282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (136382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (136482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (136582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (136682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (136782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (136882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (136982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (137082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (137182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (137282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (137382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (137482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (137582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (137682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (137782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (137882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (137982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (138082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (138182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (138282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (138382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (138482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (138582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (138682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (138782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (138882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (138982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (139082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (139182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (139282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (139382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (139482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (139582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (139682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (139782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (139882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (139982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (140082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (140182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (140282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (140382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (140482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (140582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (140682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (140782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (140882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (140982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (141082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (141182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (141282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (141382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (141482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (141582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (141682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (141782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (141882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (141982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (142082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (142182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (142282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (142382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (142482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (142582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (142682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (142782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (142882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (142982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (143082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (143182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (143282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (143382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (143482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (143582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (143682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (143782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (143882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (143982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (144082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (144182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (144282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (144382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (144482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (144582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (144682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (144782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (144882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (144982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (145082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (145182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (145282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (145382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (145482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (145582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (145682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (145782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (145882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (145982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (146082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (146182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (146282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (146382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (146482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (146582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (146682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (146782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (146882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (146982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (147082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (147182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (147282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (147382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (147482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (147582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (147682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (147782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (147882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (147982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (148082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (148182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (148282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (148382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (148482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (148582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (148682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (148782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (148882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (148982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (149082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (149182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (149282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (149382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (149482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (149582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (149682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (149782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (149882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (149982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (150082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (150182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (150282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (150382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (150482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (150582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (150682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (150782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (150882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (150982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (151082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (151182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (151282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (151382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (151482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (151582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (151682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (151782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (151882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (151982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (152082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (152182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (152282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (152382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (152482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (152582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (152682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (152782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (152882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (152982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (153082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (153182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (153282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (153382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (153482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (153582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (153682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (153782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (153882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (153982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (154082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (154182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (154282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (154382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (154482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (154582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (154682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (154782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (154882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (154982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (155082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (155182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (155282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (155382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (155482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (155582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (155682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (155782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (155882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (155982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (156082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (156182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (156282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (156382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (156482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (156582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (156682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (156782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (156882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (156982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (157082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (157182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (157282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (157382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (157482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (157582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (157682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (157782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (157882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (157982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (158082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (158182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (158282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (158382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (158482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (158582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (158682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (158782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (158882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (158982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (159082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (159182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (159282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (159382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (159482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (159582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (159682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (159782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (159882) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (159982) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (160082) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (160182) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (160282) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (160382) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (160482) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (160582) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (160682) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (160782) pwm_uart_communication: notification_count: 48 [0m
+
+[0;32mI (160812) pwm_uart_communication: button pressed! pwm duty off &LED is OFF duty_cycle:0 [0m
+
+[0;32mI (160882) pwm_uart_communication: notification_count: 49 [0m
+
+[0;32mI (160952) pwm_uart_communication: button Released! pwm duty on &LED is ON duty_cycle:500 [0m
+
+[0;32mI (160982) pwm_uart_communication: notification_count: 50 [0m
+
+[0;32mI (161082) pwm_uart_communication: notification_count: 50 [0m
+
+[0;32mI (161182) pwm_uart_communication: notification_count: 50 [0m
+
+[0;32mI (161282) pwm_uart_communication: notification_count: 50 [0m
+
+[0;32mI (161382) pwm_uart_communication: notification_count: 50 [0m
+
+[0;32mI (161482) pwm_uart_communication: notification_count: 50 [0m
+
+[0;32mI (161582) pwm_uart_communication: notification_count: 50 [0m
+
+[0;32mI (161682) pwm_uart_communication: notification_count: 50 [0m
+
+[0;32mI (161782) pwm_uart_communication: notification_count: 50 [0m
+
+[0;32mI (161882) pwm_uart_communication: notification_count: 50 [0m
+
+[0;32mI (161982) pwm_uart_communication: notification_count: 50 [0m
+
+[0;32mI (162082) pwm_uart_communication: notification_count: 50 [0m
+
+[0;32mI (162182) pwm_uart_communication: notification_count: 50 [0m
+
+[0;32mI (162282) pwm_uart_communication: notification_count: 50 [0m
+
+[0;32mI (162382) pwm_uart_communication: notification_count: 50 [0m
+
+[0;32mI (162482) pwm_uart_communication: notification_count: 50 [0m
+
+[0;32mI (162582) pwm_uart_communication: notification_count: 50 [0m
+
+[0;32mI (162682) pwm_uart_communication: notification_count: 50 [0m
+
+[0;32mI (162782) pwm_uart_communication: notification_count: 50 [0m
+
+[0;32mI (162882) pwm_uart_communication: notification_count: 50 [0m
+
+[0;32mI (162982) pwm_uart_communication: notification_count: 50 [0m
+
+[0;32mI (163082) pwm_uart_communication: notification_count: 50 [0m
+
+[0;32mI (163182) pwm_uart_communication: notification_count: 50 [0m
+
+[0;32mI (163282) pwm_uart_communication: notification_count: 50 [0m
+
+[0;32mI (163382) pwm_uart_communication: notification_count: 50 [0m
+
+[0;32mI (163482) pwm_uart_communication: notification_count: 50 [0m
+
+[0;32mI (163582) pwm_uart_communication: notification_count: 50 [0m
+
+[0;32mI (163682) pwm_uart_communication: notification_count: 50 [0m
+
+[0;32mI (163782) pwm_uart_communication: notification_count: 50 [0m
+
+[0;32mI (163882) pwm_uart_communication: notification_count: 50 [0m
+
+[0;32mI (163982) pwm_uart_communication: notification_count: 50 [0m
+
+[0;32mI (164082) pwm_uart_communication: notification_count: 50 [0m
+
+[0;32mI (164182) pwm_uart_communication: notification_count: 50 [0m
+
+[0;32mI (164282) pwm_uart_communication: notification_count: 50 [0m
+
+[0;32mI (164382) pwm_uart_communication: notification_count: 50 [0m
+
+[0;32mI (164482) pwm_uart_communication: notification_count: 50 [0m
+
+[0;32mI (164582) pwm_uart_communication: notification_count: 50 [0m
+
+[0;32mI (164682) pwm_uart_communication: notification_count: 50 [0m
+
+[0;32mI (164712) pwm_uart_communication: button pressed! pwm duty off &LED is OFF duty_cycle:0 [0m
+
+[0;32mI (164782) pwm_uart_communication: notification_count: 51 [0m
+
+[0;32mI (164872) pwm_uart_communication: button Released! pwm duty on &LED is ON duty_cycle:500 [0m
+
+[0;32mI (164882) pwm_uart_communication: notification_count: 52 [0m
+
+[0;32mI (164982) pwm_uart_communication: notification_count: 52 [0m
+
+[0;32mI (165082) pwm_uart_communication: notification_count: 52 [0m
+
+[0;32mI (165182) pwm_uart_communication: notification_count: 52 [0m
+
+[0;32mI (165282) pwm_uart_communication: notification_count: 52 [0m
+
+[0;32mI (165382) pwm_uart_communication: notification_count: 52 [0m
+
+[0;32mI (165482) pwm_uart_communication: notification_count: 52 [0m
+
+[0;32mI (165582) pwm_uart_communication: notification_count: 52 [0m
+
+[0;32mI (165682) pwm_uart_communication: notification_count: 52 [0m
+
+[0;32mI (165782) pwm_uart_communication: notification_count: 52 [0m
+
+[0;32mI (165882) pwm_uart_communication: notification_count: 52 [0m
+
+[0;32mI (165982) pwm_uart_communication: notification_count: 52 [0m
+
+[0;32mI (166082) pwm_uart_communication: notification_count: 52 [0m
+
+[0;32mI (166182) pwm_uart_communication: notification_count: 52 [0m
+
+[0;32mI (166282) pwm_uart_communication: notification_count: 52 [0m
+
+[0;32mI (166382) pwm_uart_communication: notification_count: 52 [0m
+
+[0;32mI (166482) pwm_uart_communication: notification_count: 52 [0m
+
+[0;32mI (166582) pwm_uart_communication: notification_count: 52 [0m
+
+[0;32mI (166682) pwm_uart_communication: notification_count: 52 [0m
+
+[0;32mI (166782) pwm_uart_communication: notification_count: 52 [0m
+
+[0;32mI (170512) pwm_uart_communication: Received: pwm5000.[0m
+[0;32mI (179882) pwm_uart_communication: Duty_cycle = 0[0m
+[0;32mI (179982) pwm_uart_communication: Duty_cycle = 0[0m
+[0;32mI (180082) pwm_uart_communication: Duty_cycle = 0[0m
+[0;32mI (180182) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (180282) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (180382) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (180482) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (180582) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (180682) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (180782) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (180882) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (180982) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (181082) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (181182) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (181282) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (181382) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (181482) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (181582) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (181682) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (181782) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (181882) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (181982) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (182082) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (182182) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (182282) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (182382) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (182482) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (182582) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (182682) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (182782) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (182882) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (182982) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (183082) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (183182) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (183282) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (183382) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (183482) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (183582) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (183682) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (183782) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (183882) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (183982) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (184082) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (184182) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (184282) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (184382) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (184482) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (184582) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (184682) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (184782) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (184882) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (184982) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (185082) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (185182) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (185282) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (185382) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (185482) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (185582) pwm_uart_communication: Received: pwm 500pwm 1000.[0m
+[0;32mI (185582) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (185682) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (185782) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (185882) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (185982) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (186082) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (186182) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (186282) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (186382) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (186482) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (186582) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (186682) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (186782) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (186882) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (186982) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (187082) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (187182) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (187282) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (187382) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (187482) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (187582) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (187682) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (187782) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (187882) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (187982) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (188082) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (188182) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (188282) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (188382) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (188482) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (188582) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (188682) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (188782) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (188882) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (188982) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (189082) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (189182) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (189282) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (189382) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (189482) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (189582) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (189682) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (189782) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (189882) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (189982) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (190082) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (190182) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (190282) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (190382) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (190482) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (190582) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (190682) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (190782) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (190882) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (190982) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (191082) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (191182) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (191282) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (191382) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (191482) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (191582) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (191682) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (191782) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (191882) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (191982) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (192082) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (192182) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (192282) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (192382) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (192482) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (192582) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (192682) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (192782) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (192882) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (192982) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (193082) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (193182) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (193282) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (193382) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (193482) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (193582) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (193682) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (193782) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (193882) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (193982) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (194082) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (194182) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (194282) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (194382) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (194482) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (194582) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (194682) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (194782) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (194882) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (194982) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (195082) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (195182) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (195282) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (195382) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (195482) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (195582) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (195682) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (195782) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (195882) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (195982) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (196082) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (196182) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (196282) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (196382) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (196482) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (196582) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (196682) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (196782) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (196882) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (196982) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (197082) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (197182) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (197282) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (197382) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (197482) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (197582) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (197682) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (197782) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (197882) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (197982) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (198082) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (198182) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (198282) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (198382) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (198482) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (198582) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (198682) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (198782) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (198882) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (198982) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (199082) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (199182) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (199212) pwm_uart_communication: Received: pwm 1000pwm 100[0mpwm 10
+[0;32mI (199282) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (199382) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (199482) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (199582) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (199682) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (199782) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (199882) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (199982) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (200082) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (200182) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (200282) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (200382) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (200482) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (200582) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (200682) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (200782) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (200882) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (200982) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (201082) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (201182) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (201282) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (201382) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (201482) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (201582) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (201682) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (201782) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (201882) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (201982) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (202082) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (202182) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (202282) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (202382) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (202482) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (202582) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (202682) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (202782) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (202882) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (202982) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (203082) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (203182) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (203282) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (203382) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (203482) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (203582) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (203682) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (203782) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (203882) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (203982) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (204082) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (204182) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (204282) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (204382) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (204482) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (204582) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (204682) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (204782) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (204882) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (204982) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (205082) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (205182) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (205282) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (205382) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (205482) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (205582) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (205682) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (208242) pwm_uart_communication: Received: pwm10.[0m
+[0;32mI (213682) pwm_uart_communication: Duty_cycle = 0[0m
+[0;32mI (213782) pwm_uart_communication: Duty_cycle = 0[0m
+[0;32mI (213882) pwm_uart_communication: Duty_cycle = 0[0m
+[0;32mI (213982) pwm_uart_communication: Duty_cycle = 0[0m
+[0;32mI (214082) pwm_uart_communication: Duty_cycle = 1[0m
+[0;32mI (214182) pwm_uart_communication: Duty_cycle = 1[0m
+[0;32mI (214282) pwm_uart_communication: Duty_cycle = 10[0m
+[0;32mI (214382) pwm_uart_communication: Duty_cycle = 10[0m
+[0;32mI (214482) pwm_uart_communication: Duty_cycle = 10[0m
+[0;32mI (214582) pwm_uart_communication: Duty_cycle = 10[0m
+[0;32mI (214682) pwm_uart_communication: Duty_cycle = 10[0m
+[0;32mI (214782) pwm_uart_communication: Duty_cycle = 10[0m
+[0;32mI (214882) pwm_uart_communication: Duty_cycle = 10[0m
+[0;32mI (214982) pwm_uart_communication: Duty_cycle = 10[0m
+[0;32mI (215082) pwm_uart_communication: Duty_cycle = 10[0m
+[0;32mI (215182) pwm_uart_communication: Duty_cycle = 10[0m
+[0;32mI (215282) pwm_uart_communication: Duty_cycle = 10[0m
+[0;32mI (215382) pwm_uart_communication: Duty_cycle = 10[0m
+[0;32mI (215482) pwm_uart_communication: Duty_cycle = 10[0m
+[0;32mI (215582) pwm_uart_communication: Duty_cycle = 10[0m
+[0;32mI (215682) pwm_uart_communication: Duty_cycle = 10[0m
+[0;32mI (215782) pwm_uart_communication: Duty_cycle = 10[0m
+[0;32mI (215882) pwm_uart_communication: Duty_cycle = 10[0m
+[0;32mI (215982) pwm_uart_communication: Duty_cycle = 10[0m
+[0;32mI (216082) pwm_uart_communication: Duty_cycle = 10[0m
+[0;32mI (216182) pwm_uart_communication: Duty_cycle = 10[0m
+[0;32mI (216282) pwm_uart_communication: Duty_cycle = 10[0m
+[0;32mI (216382) pwm_uart_communication: Duty_cycle = 10[0m
+[0;32mI (216482) pwm_uart_communication: Duty_cycle = 10[0m
+[0;32mI (216582) pwm_uart_communication: Duty_cycle = 10[0m
+[0;32mI (216682) pwm_uart_communication: Duty_cycle = 10[0m
+[0;32mI (216782) pwm_uart_communication: Duty_cycle = 10[0m
+[0;32mI (216802) pwm_uart_communication: Received: pwm 10[0m
+[0;32mI (216882) pwm_uart_communication: Duty_cycle = 10[0m
+[0;32mI (216982) pwm_uart_communication: Duty_cycle = 10[0m
+[0;32mI (217082) pwm_uart_communication: Duty_cycle = 10[0m
+[0;32mI (217182) pwm_uart_communication: Duty_cycle = 10[0m
+[0;32mI (217282) pwm_uart_communication: Duty_cycle = 10[0m
+[0;32mI (217382) pwm_uart_communication: Duty_cycle = 10[0m
+[0;32mI (217482) pwm_uart_communication: Duty_cycle = 10[0m
+[0;32mI (217582) pwm_uart_communication: Duty_cycle = 10[0m
+[0;32mI (217682) pwm_uart_communication: Duty_cycle = 10[0m
+[0;32mI (217782) pwm_uart_communication: Duty_cycle = 10[0m
+[0;32mI (217822) pwm_uart_communication: button pressed! pwm duty off &LED is OFF duty_cycle:0 [0m
+
+[0;32mI (218042) pwm_uart_communication: button Released! pwm duty on &LED is ON duty_cycle:10 [0m
+
+[0;32mI (218082) pwm_uart_communication: Duty_cycle = 10[0m
+[0;32mI (218182) pwm_uart_communication: Duty_cycle = 10[0m
+[0;32mI (218282) pwm_uart_communication: Duty_cycle = 10[0m
+[0;32mI (218382) pwm_uart_communication: Duty_cycle = 10[0m
+[0;32mI (218482) pwm_uart_communication: Duty_cycle = 10[0m
+[0;32mI (218582) pwm_uart_communication: Duty_cycle = 10[0m
+[0;32mI (218682) pwm_uart_communication: Duty_cycle = 10[0m
+[0;32mI (218782) pwm_uart_communication: Duty_cycle = 10[0m
+[0;32mI (218882) pwm_uart_communication: Duty_cycle = 10[0m
+[0;32mI (218982) pwm_uart_communication: Duty_cycle = 10[0m
+[0;32mI (219082) pwm_uart_communication: Duty_cycle = 10[0m
+[0;32mI (219182) pwm_uart_communication: Duty_cycle = 10[0m
+[0;32mI (219282) pwm_uart_communication: Duty_cycle = 10[0m
+[0;32mI (219382) pwm_uart_communication: Duty_cycle = 10[0m
+[0;32mI (219482) pwm_uart_communication: Duty_cycle = 10[0m
+[0;32mI (219582) pwm_uart_communication: Duty_cycle = 10[0m
+[0;32mI (219682) pwm_uart_communication: Duty_cycle = 10[0m
+[0;32mI (219782) pwm_uart_communication: Duty_cycle = 10[0m
+[0;32mI (219882) pwm_uart_communication: Duty_cycle = 10[0m
+[0;32mI (223212) pwm_uart_communication: Received: count[0m

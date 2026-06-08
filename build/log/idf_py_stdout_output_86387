@@ -1,0 +1,450 @@
+Command: /home/dhruv/.espressif/python_env/idf6.1_py3.14_env/bin/python /home/dhruv/softwares/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/dhruv/softwares/esp-idf/examples/esp_driver_design/pwm_driver/build/pwm_driver.elf /home/dhruv/softwares/esp-idf/examples/esp_driver_design/pwm_driver/build/bootloader/bootloader.elf -m '/home/dhruv/.espressif/python_env/idf6.1_py3.14_env/bin/python' '/home/dhruv/softwares/esp-idf/tools/idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0040,len:6272
+load:0x40078000,len:15820
+load:0x40080400,len:3988
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF v6.1-dev-4811-gfce70533fa 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 28 2026 18:14:50[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=09304h ( 37636) map[0m
+[0;32mI (101) esp_image: segment 1: paddr=0001932c vaddr=3ffb0000 size=029cch ( 10700) load[0m
+[0;32mI (106) esp_image: segment 2: paddr=0001bd00 vaddr=40080000 size=04318h ( 17176) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=11040h ( 69696) map[0m
+[0;32mI (138) esp_image: segment 4: paddr=00031068 vaddr=40084318 size=075b0h ( 30128) load[0m
+[0;32mI (151) esp_image: segment 5: paddr=00038620 vaddr=50000000 size=00028h (    40) load[0m
+[0;32mI (157) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (157) boot: Disabling RNG early entropy source...[0m
+[0;32mI (169) cpu_start: Multicore app[0m
+[0;32mI (177) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (177) cpu_start: Pro cpu start user code[0m
+[0;32mI (177) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (179) app_init: Application information:[0m
+[0;32mI (183) app_init: Project name:     pwm_driver[0m
+[0;32mI (187) app_init: App version:      v6.1-dev-4811-gfce70533fa[0m
+[0;32mI (193) app_init: Compile time:     May 28 2026 18:14:42[0m
+[0;32mI (198) app_init: ELF file SHA256:  40a25765f...[0m
+[0;32mI (202) app_init: ESP-IDF:          v6.1-dev-4811-gfce70533fa[0m
+[0;32mI (207) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (211) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (215) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (219) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (226) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (230) heap_init: At 3FFB37C8 len 0002C838 (178 KiB): DRAM[0m
+[0;32mI (236) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (241) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (247) heap_init: At 4008B8C8 len 00014738 (81 KiB): IRAM[0m
+[0;32mI (253) spi_flash: detected chip: generic[0m
+[0;32mI (256) spi_flash: flash io: dio[0m
+[0;33mW (259) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (272) main_task: Started on CPU0[0m
+[0;32mI (272) mI (282) TAG: ye button is set hahahaha![0m
+
+[0;32mI (282) main_task: Returned from app_main()[0m
+[0;32mI (2282) pwm_uart_communication: Duty_cycle = 0[0m
+[0;32mI (2382) pwm_uart_communication: Duty_cycle = 0[0m
+[0;32mI (2482) pwm_uart_communication: Duty_cycle = 0[0m
+[0;32mI (2582) pwm_uart_communication: Duty_cycle = 1[0m
+[0;32mI (2682) pwm_uart_communication: Duty_cycle = 1[0m
+[0;32mI (2782) pwm_uart_communication: Duty_cycle = 10[0m
+[0;32mI (2882) pwm_uart_communication: Duty_cycle = 10[0m
+[0;32mI (2982) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (3082) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (3182) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (3282) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (3382) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (3482) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (3582) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (3682) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (3782) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (3882) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (3982) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (4082) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (4182) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (4282) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (4382) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (4482) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (4582) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (4682) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (4782) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (4882) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (4982) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (5082) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (5182) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (5282) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (5382) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (5482) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (5582) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (5682) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (5782) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (5882) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (5982) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (6082) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (6182) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (6282) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (6382) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (6482) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (6582) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (6682) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (6782) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (6882) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (6982) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (7082) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (7182) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (7282) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (7382) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (7482) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (7582) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (7682) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (7782) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (7882) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (7972) pwm_uart_communication: Received: pwm 100[0mpwm 500
+[0;32mI (7982) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (8082) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (8182) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (8282) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (8382) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (8482) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (8582) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (8682) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (8782) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (8882) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (8982) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (9082) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (9182) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (9282) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (9382) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (9482) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (9582) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (9682) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (9782) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (9882) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (9982) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (10082) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (10182) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (10282) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (10382) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (10482) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (10582) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (10682) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (10782) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (10882) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (10982) pwm_uart_communication: Duty_cycle = 500[0m
+[0;32mI (11082) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (11182) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (11282) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (11382) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (11482) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (11582) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (11682) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (11782) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (11882) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (11982) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (12082) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (12182) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (12282) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (12382) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (12482) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (12582) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (12682) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (12782) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (12882) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (12982) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (13082) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (13182) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (13282) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (13382) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (13482) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (13582) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (13682) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (13782) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (13882) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (13982) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (14082) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (14182) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (14282) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (14382) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (14482) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (14582) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (14682) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (14782) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (14882) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (14982) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (15082) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (15182) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (15282) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (15382) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (15482) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (15582) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (15682) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (15692) pwm_uart_communication: Received: pwm 5000[0mpwm 100
+[0;32mI (15782) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (15882) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (15982) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (16082) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (16182) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (16282) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (16382) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (16482) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (16582) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (16682) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (16782) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (16882) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (16982) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (17082) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (17182) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (17282) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (17382) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (17482) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (17582) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (17682) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (17782) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (17882) pwm_uart_communication: Duty_cycle = 5000[0m
+[0;32mI (17982) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (18082) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (18182) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (18282) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (18382) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (18482) pwm_uart_communication: Duty_cycle = 1000[0m
+[0;32mI (18582) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (18682) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (18782) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (18882) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (18982) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (19082) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (19182) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (19282) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (19382) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (19482) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (19582) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (19682) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (19782) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (19882) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (19982) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (20082) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (20182) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (20282) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (20382) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (20482) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (20532) pwm_uart_communication: Received: pwm 100[0m
+[0;32mI (20582) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (20682) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (20782) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (20882) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (20982) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (21082) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (21182) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (21282) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (21382) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (21482) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (21502) pwm_uart_communication: button task is running! count:1 [0m
+
+[0;32mI (21502) pwm_uart_communication: button pressed! pwm duty off &LED is OFF duty_cycle:0 [0m
+
+[0;32mI (21802) pwm_uart_communication: button task is running! count:1 [0m
+
+[0;32mI (21802) pwm_uart_communication: button Released! pwm duty on &LED is ON duty_cycle:100 [0m
+
+[0;32mI (21882) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (21982) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (22082) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (22182) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (22282) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (22382) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (22482) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (22582) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (22682) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (22782) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (22882) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (22982) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (23082) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (23182) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (23282) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (23382) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (23482) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (23582) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (23682) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (23782) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (23882) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (23982) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (24082) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (24182) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (24282) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (24382) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (24482) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (24582) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (24682) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (24782) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (24882) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (24982) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (25082) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (25182) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (25282) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (25382) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (25482) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (25582) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (25682) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (25782) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (25882) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (25982) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (26082) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (26182) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (26282) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (26382) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (26482) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (26582) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (26682) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (26782) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (26882) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (26982) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (27082) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (27182) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (27282) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (27382) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (27482) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (27582) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (27682) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (27782) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (27882) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (27982) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (28082) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (28182) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (28282) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (28382) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (28482) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (28582) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (28682) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (28782) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (28882) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (28982) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (29082) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (29182) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (29282) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (29382) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (29482) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (29582) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (29682) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (29782) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (29882) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (29982) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (30082) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (30182) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (30282) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (30382) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (30482) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (30582) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (30682) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (30782) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (30882) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (30982) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (31082) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (31182) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (31282) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (31382) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (31482) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (31582) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (31682) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (31782) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (31882) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (31982) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (32082) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (32182) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (32282) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (32382) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (32482) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (32582) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (32682) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (32782) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (32882) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (32982) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (33082) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (33182) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (33282) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (33382) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (33482) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (33582) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (33682) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (33782) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (33882) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (33982) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (34082) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (34182) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (34282) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (34382) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (34482) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (34582) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (34682) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (34782) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (34882) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (34982) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (35082) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (35182) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (35282) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (35382) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (35482) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (35582) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (35682) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (35782) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (35882) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (35982) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (36082) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (36182) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (36282) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (36382) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (36482) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (36582) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (36682) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (36782) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (36882) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (36982) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (37082) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (37182) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (37282) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (37382) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (37482) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (37582) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (37682) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (37782) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (37882) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (37982) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (38082) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (38182) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (38282) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (38382) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (38482) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (38582) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (38682) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (38782) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (38882) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (38982) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (39082) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (39182) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (39282) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (39382) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (39482) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (39582) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (39682) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (39782) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (39882) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (39982) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (40082) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (40182) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (40282) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (40382) pwm_uart_communication: Duty_cycle = 100[0m
+[0;32mI (40482) pwm_uart_communication: Duty_cycle = 100[0m

@@ -1,0 +1,29 @@
+Command: /home/dhruv/.espressif/python_env/idf6.1_py3.14_env/bin/python /home/dhruv/softwares/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/dhruv/softwares/esp-idf/examples/esp_driver_design/pwm_driver/build/pwm_driver.elf /home/dhruv/softwares/esp-idf/examples/esp_driver_design/pwm_driver/build/bootloader/bootloader.elf -m '/home/dhruv/.espressif/python_env/idf6.1_py3.14_env/bin/python' '/home/dhruv/softwares/esp-idf/tools/idf.py'
+[0;33m--- esp-idf-monitor 1.9.0 on /dev/ttyUSB0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32m/home/dhruv/softwares/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2259[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/dhruv/softwares/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40082727: [0;33mlock_acquire_generic[0m[0m at [0;32m/home/dhruv/softwares/esp-idf/components/esp_libc/src/locks.c[0m[0m:[1;31m145[0m
+[0m--- 0x40086eb1: [0;33mpanic_abort[0m[0m at [0;32m/home/dhruv/softwares/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m500[0m
+[0m--- 0x40086e79: [0;33mesp_system_abort[0m[0m at [0;32m/home/dhruv/softwares/esp-idf/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40085f8d: [0;33mabort[0m[0m at [0;32m/home/dhruv/softwares/esp-idf/components/esp_libc/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x40082727: [0;33mlock_acquire_generic[0m[0m at [0;32m/home/dhruv/softwares/esp-idf/components/esp_libc/src/locks.c[0m[0m:[1;31m145[0m
+[0m--- 0x40082865: [0;33m_lock_acquire_recursive[0m[0m at [0;32m/home/dhruv/softwares/esp-idf/components/esp_libc/src/locks.c[0m[0m:[1;31m174[0m
+[0m--- 0x400828ce: [0;33m__retarget_lock_acquire_recursive[0m[0m at [0;32m/home/dhruv/softwares/esp-idf/components/esp_libc/src/locks.c[0m[0m:[1;31m333[0m
+[0m--- 0x400dc026: [0;33m__flockfile[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/build/build-picolibc-build-x86_64-build_pc-linux-gnu/../../../src/picolibc-git-1738c754/newlib/libc/tinystdio/stdio_private.h[0m[0m:[1;31m241[0m
+[0m--- (inlined by) [0;33mvfprintf[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/build/build-picolibc-build-x86_64-build_pc-linux-gnu/../../../src/picolibc-git-1738c754/newlib/libc/tinystdio/vfprintf.c[0m[0m:[1;31m563[0m
+[0m--- 0x400dcb1f: [0;33mvprintf[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/build/build-picolibc-build-x86_64-build_pc-linux-gnu/../../../src/picolibc-git-1738c754/newlib/libc/tinystdio/vprintf.c[0m[0m:[1;31m38[0m
+[0m--- 0x40089c6b: [0;33mesp_log_va[0m[0m at [0;32m/home/dhruv/softwares/esp-idf/components/log/src/log.c[0m[0m:[1;31m43[0m
+[0m--- (inlined by) [0;33mesp_log[0m[0m at [0;32m/home/dhruv/softwares/esp-idf/components/log/src/log.c[0m[0m:[1;31m88[0m
+[0m--- 0x4008290d: [0;33mbutton_isr_handler[0m[0m at [0;32m/home/dhruv/softwares/esp-idf/examples/esp_driver_design/pwm_driver/main/pwm_driver_main.c[0m[0m:[1;31m76[0m
+[0m--- 0x40082f51: [0;33mgpio_isr_loop[0m[0m at [0;32m/home/dhruv/softwares/esp-idf/components/esp_driver_gpio/src/gpio.c[0m[0m:[1;31m532[0m
+[0m--- 0x40082fe1: [0;33mgpio_intr_service[0m[0m at [0;32m/home/dhruv/softwares/esp-idf/components/esp_driver_gpio/src/gpio.c[0m[0m:[1;31m554[0m
+[0m--- 0x40082cf1: [0;33m_xt_lowint1[0m[0m at [0;32m/home/dhruv/softwares/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1264[0m
+[0m--- 0x40084ceb: [0;33mxt_utils_wait_for_intr[0m[0m at [0;32m/home/dhruv/softwares/esp-idf/components/xtensa/include/xt_utils.h[0m[0m:[1;31m82[0m
+[0m--- (inlined by) [0;33mesp_cpu_wait_for_intr[0m[0m at [0;32m/home/dhruv/softwares/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m55[0m
+[0m--- 0x400de907: [0;33mesp_vApplicationIdleHook[0m[0m at [0;32m/home/dhruv/softwares/esp-idf/components/esp_system/freertos_hooks.c[0m[0m:[1;31m58[0m
+[0m--- 0x400df94a: [0;33mprvIdleTask[0m[0m at [0;32m/home/dhruv/softwares/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c[0m[0m:[1;31m4350[0m
+[0m--- 0x400deead: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/dhruv/softwares/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m147[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32m/home/dhruv/softwares/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2259[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/dhruv/softwares/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m
