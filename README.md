@@ -53,14 +53,13 @@ This project demonstrates the use of FreeRTOS Binary Semaphores in ESP-IDF for t
 
 ### Binary Semaphore
 
-Binary Semaphores are used for task synchronization, where one task signals another task to perform an action.
+Task notifications are used for task synchronization, where one task signals another task to perform an action.
 
 Functions used:
 
 ```c
-xSemaphoreCreateBinary();
-xSemaphoreTake();
-xSemaphoreGive();
+ulTaskNotifyTake();  
+
 ```
 
 ### Task Management
