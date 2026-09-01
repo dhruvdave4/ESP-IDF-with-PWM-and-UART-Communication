@@ -66,7 +66,7 @@ void button_init(void)
         .pull_up_en = 1                 // Enable pull-up
     };
     gpio_config(&io_conf);  
-    ESP_LOGI("TAG","ye button is set hahahaha!\r\n");   
+    ESP_LOGI("TAG"," .__.  button is set :) \r\n");   
 } 
 static void IRAM_ATTR button_isr_handler(void* arg) 
 { 
@@ -103,7 +103,7 @@ void button_task(void *pvParameters)
  while (1)
  {
     // if(xQueueReceive(button_queue, &pin, portMAX_DELAY))  
-  count = ulTaskNotifyTake(pdTRUE, portMAX_DELAY);  
+        count = ulTaskNotifyTake(pdTRUE, portMAX_DELAY);  
         ESP_LOGI(TAG,"button task is running! count:%u \r\n",count);    
 
  
