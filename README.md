@@ -32,10 +32,6 @@ This project demonstrates the use of FreeRTOS Binary Semaphores in ESP-IDF for t
 .
 ├── main/
 │   ├── main.c
-│   ├── uart_driver.c
-│   ├── uart_driver.h
-│   ├── pwm_driver.c
-│   └── pwm_driver.h
 ├── CMakeLists.txt
 ├── sdkconfig. defaults
 └── README.md
